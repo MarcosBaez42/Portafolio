@@ -67,7 +67,7 @@ body {
 
 @media screen and (max-width: 900px) {
     .M1text {
-        margin-left: 0;
+        margin-right: 30%;
     }
 }
 
@@ -82,7 +82,7 @@ body {
 @media screen and (max-width: 1280px) {
     .M1Menutext {
         display: flex;
-        margin-left: -20%;
+        margin-left: -50%;
     }
 }
 
@@ -90,7 +90,7 @@ body {
     .M1Menutext {
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        margin-left: -20%;
+        margin-left: -50%;
     }
 }
 
@@ -104,9 +104,9 @@ body {
 
 @media screen and (max-width: 900px) {
     .M1Menutext {
-        display: flex;
-        justify-content: center;
-        margin-left: -5%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin-left: -10%;
     }
 }
 
@@ -134,6 +134,8 @@ body {
 .M1text2:hover {
     color: rgb(253, 41, 140);
 }
+
+
 
 .Menu2 {
     position: relative;
@@ -256,17 +258,65 @@ a {
     text-decoration: none;
 }
 
+.M1Menupart3{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .M1Menupart3 {
+        width: 100%;
+        margin-left: 95%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .M1Menupart3 {
+        
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .img1 {
+    position: absolute;
+    width: 70%;
+    margin-left: -10%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .img2 {
+    position: absolute;
+    width: 40%;
+    margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .img3 {
+    position: absolute;
+    width: 20%;
+    margin-left: 3%;
+    }
+}
+
 
 .img1 {
-    margin-left: 5%;
+    position: absolute;
+    width: 20%;
 }
 
 .img2 {
-    margin-left: 5%;
+    position: absolute;
+    width: 20%;
+    margin-left: 3%
 }
 
 .img3 {
-    margin-left: 5%;
+    position: absolute;
+    width: 20%;
+    margin-left: 6%
 }
 
 .img4 {
@@ -605,9 +655,37 @@ a {
     overflow: hidden;
     height: 32vh;
     border: rgba(2, 2, 2, 0.678) solid 1px;
-    filter: grayscale(100%);
+    
+}
+
+.M6cuadros .a img  {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#M6cuadros .a:hover img{
+    filter: grayscale(0);
+    object-fit: cover;
     transition: filter 0.5s;
 }
+#M6cuadros .info {
+    position: absolute;
+    left: 0;
+    background-color: #000000;
+    color: rgb(185, 54, 54);
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#M6cuadro :hover .info{
+    opacity: 1;
+    bottom: 0;
+}
+
 
 .Menu7 {
     width: 100%;
